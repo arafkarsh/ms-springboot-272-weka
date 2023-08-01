@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.fusion.air</groupId>
-	<artifactId>ms-vanilla-service</artifactId>
+	<artifactId>ms-weka-service</artifactId>
 	<version>0.4.0</version>
 	<packaging>jar</packaging>
-	<name>msVanillaService</name>
-	<description>Microservice Vanilla Template</description>
+	<name>msWekaService</name>
+	<description>Microservice Weka Template</description>
 
 	<!-- =================================================================== -->
 	<!-- Properties / Versions -->
@@ -50,6 +50,9 @@
 		<!-- Spring Kafka ================================================= -->
 		<spring.kafka.version>2.9.9</spring.kafka.version>
 
+		<!--AI / ML / DL - Weka Framework ===================================== -->
+		<weka.version>3.8.6</weka.version>
+
 		<!-- Open API v3 - Swagger UI ===================================== -->
 		<openapi.version>1.6.9</openapi.version>
 
@@ -83,6 +86,18 @@
 	</repositories>
 
 	<dependencies>
+
+		<!-- ================================================================= -->
+		<!-- Weka Framework -->
+		<!-- ================================================================= -->
+
+		<!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-stable -->
+		<dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>weka-stable</artifactId>
+			<version>${weka.version}</version>
+		</dependency>
+
 		<!-- ================================================================= -->
 		<!-- Log Framework -->
 		<!-- ================================================================= -->
